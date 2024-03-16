@@ -19,6 +19,8 @@ export const MobileNavbar = () => {
       <Button
         variant="ghost"
         onClick={() => handleToggleMenu()}
+        aria-label="Menu"
+        title="Menu"
         className="sm:hidden"
       >
         <FiBarChart size={20} className="rotate-90" />
@@ -29,6 +31,8 @@ export const MobileNavbar = () => {
         <Button
           variant="ghost"
           onClick={() => handleToggleMenu()}
+          aria-label="Fechar menu"
+          title="Fechar menu"
           className="absolute top-4 right-4"
         >
           <FiX size={20} />
