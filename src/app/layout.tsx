@@ -11,8 +11,8 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <head>
-        <title>Sanctuarium</title>
-        <meta name="description" content="Sanctuarium" />
+        <title>Barbearia dos Irmãos</title>
+        <meta name="description" content="Barbearia dos Irmãos" />
       </head>
       <body>
         <Providers attribute="class" defaultTheme="dark">
