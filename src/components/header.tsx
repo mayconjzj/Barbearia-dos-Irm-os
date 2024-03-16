@@ -23,7 +23,7 @@ export const Header = () => {
       <MobileNavbar />
       <div className="absolute right-4 sm:right-10 flex">
         <SocialButton
-          href="https://instagram.com/sanctuariumbv"
+          href="https://instagram.com"
           arial-label="Instagram"
           title="Instagram"
         >
