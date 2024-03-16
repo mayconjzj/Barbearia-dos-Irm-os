@@ -26,7 +26,7 @@ export default function Home() {
             velit harum unde hic vitae. Ab quod architecto beatae veritatis
             quidem unde!
           </p>
-          <Button asChild aria-label="Contato">
+          <Button asChild aria-label="Contato" title="Contato">
             <Link href="/contato">Contato</Link>
           </Button>
         </div>

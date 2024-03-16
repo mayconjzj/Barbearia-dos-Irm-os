@@ -25,10 +25,15 @@ export const Header = () => {
         <SocialButton
           href="https://instagram.com/sanctuariumbv"
           arial-label="Instagram"
+          title="Instagram"
         >
           <FaInstagram size={20} />
         </SocialButton>
-        <SocialButton href="https://wa.me/5511999999999" arial-label="Whatsapp">
+        <SocialButton
+          href="https://wa.me/5511999999999"
+          arial-label="Whatsapp"
+          title="Whatsapp"
+        >
           <FaWhatsapp size={20} />
         </SocialButton>
       </div>
