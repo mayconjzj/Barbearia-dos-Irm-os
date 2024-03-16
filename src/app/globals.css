@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #fafafa;
+    --foreground: #09090b;
+
+    --button: #27272a;
+    --button-foreground: #f4f4f5;
+
+    --muted: #a3a3a3;
+    --border: #e4e4e7;
+
+    --radius: 0.5rem;
+
+    --font-inter: 'Inter';
+  }
+
+  .dark {
+    --background: #09090b;
+    --foreground: #fafafa;
+
+    --button: #f4f4f5;
+    --button-foreground: #27272a;
+
+    --border: #18181b;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+  }
+}
