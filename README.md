@@ -18,3 +18,28 @@ A Barbearia dos Irmãos é uma plataforma online para uma barbearia fictícia, o
 1. **Clone o repositório:**
 
 git clone https://github.com/seu-usuario/barbearia-dos-irmaos.git
+
+
+2. **Instale as dependências:**
+
+cd barbearia-dos-irmaos
+npm install
+
+
+3. **Inicie o servidor de desenvolvimento:**
+
+
+4. **Acesse o projeto no navegador:**
+Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
+
+## Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue se encontrar algum problema ou para propor melhorias. Pull requests também são apreciados.
+
+## Autor
+
+Este projeto foi desenvolvido por [Maycon](https://github.com/mayconjzj).
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT. Consulte o arquivo LICENSE para obter mais detalhes.
