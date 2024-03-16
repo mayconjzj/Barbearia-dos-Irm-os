@@ -31,7 +31,7 @@ export default function Home() {
           </Button>
         </div>
       </section>
-      <div className="space-y-10 max-w-[800px]">
+      {/* <div className="space-y-10 max-w-[800px]">
         <section>
           <div className="space-y-3">
             <h2 className="text-4xl font-black">Produtos</h2>
@@ -54,7 +54,7 @@ export default function Home() {
             </p>
           </div>
         </section>
-      </div>
+      </div> */}
     </article>
   );
 }
