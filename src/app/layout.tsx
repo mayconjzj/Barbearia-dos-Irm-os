@@ -10,6 +10,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
+      <head>
+        <title>Sanctuarium</title>
+        <meta name="description" content="Sanctuarium" />
+      </head>
       <body>
         <Providers attribute="class" defaultTheme="dark">
           <Header />
