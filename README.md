@@ -17,7 +17,7 @@ A Barbearia dos Irmãos é uma plataforma online para uma barbearia fictícia, o
 
 1. **Clone o repositório:**
 
-git clone https://github.com/seu-usuario/barbearia-dos-irmaos.git
+git clone https://github.com/seu-usuario/Barbearia-dos-Irm-os.git
 
 
 2. **Instale as dependências:**
