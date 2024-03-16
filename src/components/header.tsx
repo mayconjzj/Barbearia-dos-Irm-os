@@ -22,10 +22,13 @@ export const Header = () => {
       </nav>
       <MobileNavbar />
       <div className="absolute right-4 sm:right-10 flex">
-        <SocialButton href="https://instagram.com/sanctuariumbv">
+        <SocialButton
+          href="https://instagram.com/sanctuariumbv"
+          arial-label="Instagram"
+        >
           <FaInstagram size={20} />
         </SocialButton>
-        <SocialButton href="https://wa.me/5511999999999">
+        <SocialButton href="https://wa.me/5511999999999" arial-label="Whatsapp">
           <FaWhatsapp size={20} />
         </SocialButton>
       </div>

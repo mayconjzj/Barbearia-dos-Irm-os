@@ -10,7 +10,7 @@ export default function Home() {
         <div className="absolute inset-0 -z-10 w-full h-screen">
           <Image
             className="object-cover object-[80%_0%] md:object-center"
-            src="/images/sanctuarium.jpg"
+            src="/images/barber-backdrop.jpg"
             alt="Sanctuarium"
             fill
             priority
@@ -26,7 +26,7 @@ export default function Home() {
             velit harum unde hic vitae. Ab quod architecto beatae veritatis
             quidem unde!
           </p>
-          <Button asChild>
+          <Button asChild aria-label="Contato">
             <Link href="/contato">Contato</Link>
           </Button>
         </div>
