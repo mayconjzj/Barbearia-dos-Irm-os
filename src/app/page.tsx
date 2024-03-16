@@ -27,7 +27,7 @@ export default function Home() {
             quidem unde!
           </p>
           <Button asChild aria-label="Contato" title="Contato">
-            <Link href="/contato">Contato</Link>
+            <Link href="https://wa.me/5511999999999">Contato</Link>
           </Button>
         </div>
       </section>
