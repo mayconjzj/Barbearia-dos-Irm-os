@@ -9,7 +9,7 @@ export const SanctuariumSection = () => {
   return (
     <section
       id="home"
-      className="min-h-[calc(100vh-60px)] flex items-end md:items-center"
+      className="min-h-[calc(100vh-60px)] flex items-end md:items-center border-b-[0.5px] border-border"
     >
       <div className="absolute inset-0 -z-10 w-full h-screen">
         <Image
@@ -28,7 +28,9 @@ export const SanctuariumSection = () => {
         <h1 className="text-5xl font-black text-foreground">
           {Sanctuarium.name}
         </h1>
-        <p className="text-muted font-light">{Sanctuarium.description}</p>
+        <p className="text-muted font-light line-clamp-5">
+          {Sanctuarium.description}
+        </p>
         <Button asChild>
           <Link
             href={Sanctuarium.contact.whatsapp.href}
