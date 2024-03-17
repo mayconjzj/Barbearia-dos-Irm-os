@@ -11,7 +11,7 @@ export const Sanctuarium = {
   contact: {
     instagram: {
       name: 'instagram',
-      href: 'https://www.instagram.com/sanctuarium.barbearia/',
+      href: 'https://www.instagram.com/sanctuariumbv/',
       icon: <FaInstagram size={24} />
     },
     email: {
