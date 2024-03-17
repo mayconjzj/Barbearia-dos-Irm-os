@@ -16,7 +16,7 @@ export const Footer = () => {
         <article className="space-y-3 lg:pr-2 py-4 border-b-[0.5px] lg:border-b-0 lg:border-r-[0.5px] border-border">
           <div className="space-y-3">
             <Logo.Root>
-              <Logo.Name className="text-4xl font-black" />
+              <Logo.Name className="text-4xl font-black" name="Sanctuarium" />
             </Logo.Root>
             <p className="text-muted font-light">
               No Sanctuarium, combinamos barbearia e estúdio de tatuagens para
@@ -77,6 +77,8 @@ export const Footer = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
+              title="mapa"
+              aria-label="mapa"
               className="rounded-lg"
             ></iframe>
           </div>

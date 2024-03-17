@@ -34,7 +34,7 @@ export const LogoIcon = ({ className, ...props }: LogoIcon) => {
   );
 };
 
-export type LogoNameProps = {
+export type LogoNameProps = React.AllHTMLAttributes<HTMLAnchorElement> & {
   className?: string;
 };
 
