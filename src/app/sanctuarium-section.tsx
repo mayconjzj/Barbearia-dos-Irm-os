@@ -9,7 +9,7 @@ export const SanctuariumSection = () => {
   return (
     <section
       id="home"
-      className="min-h-[100vh] flex items-end md:items-center border-b-[0.5px] border-border"
+      className="min-h-[calc(100vh-60px)] flex items-end md:items-center border-b-[0.5px] border-border"
     >
       <div className="absolute inset-0 -z-10 w-full h-screen">
         <Image
@@ -24,7 +24,7 @@ export const SanctuariumSection = () => {
         <div className="absolute inset-0 bg-gradient-to-l from-transparent to-background" />
       </div>
 
-      <div className="max-w-[600px] mb-28 md:mb-0 space-y-3">
+      <div className="max-w-[600px] mb-20 md:mb-0 space-y-3">
         <h1 className="text-5xl font-black text-foreground">
           {Sanctuarium.name}
         </h1>
