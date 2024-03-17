@@ -1,9 +1,9 @@
-# Projeto Barbearia dos Irmãos
+# Projeto Sanctuarium
 
-Este é o repositório para o projeto da Barbearia dos Irmãos, um website desenvolvido utilizando Next.js e Tailwind CSS.
+Este é o repositório para o projeto da Sactuarium, um website desenvolvido utilizando Next.js e Tailwind CSS.
 
 ## Descrição
-A Barbearia dos Irmãos é uma plataforma online para uma barbearia fictícia, onde os usuários podem encontrar informações sobre os serviços oferecidos, agendar horários e entrar em contato com a equipe. O projeto é focado em fornecer uma experiência de usuário intuitiva e atraente, combinando design moderno com funcionalidades práticas.
+A Sanctuarium é uma plataforma online para uma barbearia, onde os usuários podem encontrar informações sobre os serviços oferecidos, agendar horários e entrar em contato com a equipe. O projeto é focado em fornecer uma experiência de usuário intuitiva e atraente, combinando design moderno com funcionalidades práticas.
 
 ## Tecnologias Utilizadas
 
@@ -24,7 +24,7 @@ git clone https://github.com/seu-usuario/Barbearia-dos-Irm-os.git
 
 2. **Instale as dependências:**
 
-cd barbearia-dos-irmaos
+cd sanctuarium
 npm install
 
 
