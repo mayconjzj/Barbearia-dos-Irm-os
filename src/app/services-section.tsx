@@ -10,7 +10,7 @@ export const ServicesSection = () => {
 
       <div className="flex gap-3 justify-evenly flex-wrap">
         <CoverCard.Root className="w-60 h-60">
-          <CoverCard.Image name="Cortes de Cabelo" src="/images/haircut.webp" />
+          <CoverCard.Image name="Cortes de Cabelo" src="/images/haircut.jpg" />
           <CoverCard.Gradient />
           <CoverCard.Content>
             <CoverCard.Title>Cabelo</CoverCard.Title>
