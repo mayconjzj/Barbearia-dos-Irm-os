@@ -9,8 +9,8 @@ import { SocialButton } from './ui/social-button';
 
 export const Header = () => {
   return (
-    <header className="flex fixed top-0 z-50 w-screen items-center px-2 sm:px-20 py-4 h-[60px] backdrop-blur-lg font-medium border-b-[0.5px] border-border">
-      <nav className="hidden sm:flex sm:items-center gap-x-6">
+    <header className="flex fixed top-0 z-50 w-screen items-center px-2 md:px-20 py-4 h-[60px] backdrop-blur-lg font-medium border-b-[0.5px] border-border">
+      <nav className="hidden md:flex md:items-center gap-x-6">
         <Logo.Root>
           <Logo.Icon />
         </Logo.Root>
@@ -27,7 +27,7 @@ export const Header = () => {
 
       <MobileNavbar />
 
-      <div className="absolute right-2 sm:right-20 flex">
+      <div className="absolute right-2 md:right-20 flex">
         <SocialButton
           href="https://instagram.com/sanctuariumbv"
           title="Instagram"

@@ -43,7 +43,7 @@ const LogoName = ({ className, ...props }: LogoNameProps) => {
   return (
     <Link
       href="/"
-      className={cn('text-foreground', className)}
+      className={cn('text-foreground font-bold', className)}
       title="Sanctuarium"
       {...props}
     >

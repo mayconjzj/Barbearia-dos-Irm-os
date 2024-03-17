@@ -22,7 +22,7 @@ export default function RootLayout({
       <body>
         <Providers attribute="class" defaultTheme="dark">
           <Header />
-          <main className="px-4 md:px-10 mt-[60px]">{children}</main>
+          <main className="px-2 md:px-20 mt-[60px]">{children}</main>
           <Footer />
         </Providers>
       </body>
