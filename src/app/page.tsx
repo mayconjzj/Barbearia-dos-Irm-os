@@ -64,7 +64,7 @@ export default function Home() {
                   src="/images/barbeiro.jpg"
                   alt="Barbeiro"
                   fill
-                  priority
+                  loading="lazy"
                   aria-label='Foto de perfil do colaborador "Robertinho"'
                   className="object-cover object-center inset-0 -z-10"
                 />
@@ -82,7 +82,7 @@ export default function Home() {
                   src="/images/tatuadora.jpg"
                   alt="Barbeiro"
                   fill
-                  priority
+                  loading="lazy"
                   aria-label='Foto de perfil do colaborador "Evelyn"'
                   className="object-cover object-center inset-0 -z-10"
                 />
