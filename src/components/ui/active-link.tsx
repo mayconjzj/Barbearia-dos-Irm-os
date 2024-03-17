@@ -33,6 +33,7 @@ export type ActiveLinkProps = React.HTMLAttributes<HTMLAnchorElement> &
 export const ActiveLink = ({
   children,
   className,
+  title,
   size,
   href,
   ...props
@@ -45,6 +46,8 @@ export const ActiveLink = ({
     <Link
       className={activeLinkVariants({ className, size, isActive })}
       href={href}
+      title={title}
+      aria-label={title}
       {...props}
     >
       {children}
