@@ -1,13 +1,10 @@
 import Link from 'next/link';
-import { BsFillTelephoneFill } from 'react-icons/bs';
-import { FaInstagram } from 'react-icons/fa';
-import { FaMapLocationDot } from 'react-icons/fa6';
 
 import { links } from '@/config/nav-links';
+import { Sanctuarium } from '@/config/sanctuarium';
 
 import { ActiveLink } from './ui/active-link';
 import { Button } from './ui/button';
-import { Logo } from './ui/logo';
 
 export const Footer = () => {
   return (
@@ -15,17 +12,8 @@ export const Footer = () => {
       <section className="lg:grid lg:grid-cols-3 py-4 border-b-[0.5px] border-border space-y-3">
         <article className="space-y-3 lg:pr-2 py-4 border-b-[0.5px] lg:border-b-0 lg:border-r-[0.5px] border-border">
           <div className="space-y-3">
-            <Logo.Root>
-              <Logo.Name className="text-4xl font-black" />
-            </Logo.Root>
-            <p className="text-muted font-light">
-              No Sanctuarium, combinamos barbearia e estúdio de tatuagens para
-              oferecer uma experiência de estilo completa. Nossa equipe
-              talentosa proporciona cortes de cabelo, barbas e tatuagens
-              personalizadas, tudo em um ambiente acolhedor e único. Celebre sua
-              individualidade conosco e descubra seu santuário pessoal de beleza
-              e autoexpressão.
-            </p>
+            <h1 className="text-4xl font-black">{Sanctuarium.name}</h1>
+            <p className="text-muted font-light">{Sanctuarium.description}</p>
           </div>
 
           <div className="space-y-3">
@@ -36,11 +24,11 @@ export const Footer = () => {
                 className="rounded-full w-12 h-12 p-1 flex items-center justify-center"
               >
                 <Link
-                  href="https://instagram.com/sanctuariumbv"
+                  href={Sanctuarium.contact.instagram.href}
                   target="_blank"
-                  aria-label="Instagram"
+                  aria-label={Sanctuarium.contact.instagram.name}
                 >
-                  <FaInstagram size={24} />
+                  {Sanctuarium.contact.instagram.icon}
                 </Link>
               </Button>
             </div>
@@ -64,20 +52,21 @@ export const Footer = () => {
           <h2 className="text-2xl font-bold">CONTATO</h2>
           <div>
             <div className="flex items-center gap-x-4">
-              <BsFillTelephoneFill size={15} />
-              <p className="text-foreground font-light">(11) 99999-9999</p>
+              {Sanctuarium.contact.phone.icon}
+              <p className="text-foreground font-light">
+                {Sanctuarium.contact.phone.href}
+              </p>
             </div>
 
             <div className="flex items-center gap-x-4">
-              <FaMapLocationDot size={24} />
+              {Sanctuarium.address.icon}
               <p className="text-foreground font-light">
-                Av. Consolação de Matos, 103 - Cidade Satélite, Boa Vista - RR,
-                69317-474
+                {Sanctuarium.address.address}
               </p>
             </div>
 
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1557.3664139655757!2d-60.74404789965962!3d2.841346887538738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8d9305cf8a91f0b9%3A0xd4c1081b49bf0610!2sEst%C3%BAdio%20de%20tatuagem%20Sanctatinta!5e0!3m2!1spt-BR!2sbr!4v1710634473100!5m2!1spt-BR!2sbr"
+              src={Sanctuarium.address.href}
               width="100%"
               height="200px"
               allowFullScreen

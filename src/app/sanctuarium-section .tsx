@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { Sanctuarium } from '@/config/sanctuarium';
+
 import { Button } from '@/components/ui/button';
 
 export const SanctuariumSection = () => {
@@ -11,7 +13,7 @@ export const SanctuariumSection = () => {
     >
       <div className="absolute inset-0 -z-10 w-full h-screen">
         <Image
-          src="/images/barber-backdrop.jpg"
+          src={Sanctuarium.backdrop}
           alt="Sanctuarium"
           fill
           priority
@@ -23,20 +25,15 @@ export const SanctuariumSection = () => {
       </div>
 
       <div className="max-w-[600px] mb-10 md:mb-0 space-y-3">
-        <h1 className="text-5xl font-black text-foreground">Sanctuarium</h1>
-        <p className="text-muted font-light">
-          Uma fusão única de barbearia e estúdio de tatuagens, onde estilo e
-          autoexpressão se encontram. Nossa equipe dedicada oferece cortes de
-          cabelo, barbas e tatuagens personalizadas em um ambiente acolhedor e
-          sofisticado. Cada cliente é tratado de forma única, celebrando sua
-          individualidade. Venha nos visitar e encontre seu santuário pessoal de
-          estilo e beleza.
-        </p>
+        <h1 className="text-5xl font-black text-foreground">
+          {Sanctuarium.name}
+        </h1>
+        <p className="text-muted font-light">{Sanctuarium.description}</p>
         <Button asChild>
           <Link
-            href="https://wa.me/5511999999999"
+            href={Sanctuarium.contact.whatsapp.href}
             target="_blank"
-            title="Contato"
+            title={Sanctuarium.contact.whatsapp.name}
           >
             Contato
           </Link>

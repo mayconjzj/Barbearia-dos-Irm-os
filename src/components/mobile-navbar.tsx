@@ -7,7 +7,7 @@ import { links } from '@/config/nav-links';
 
 import { ActiveLink } from './ui/active-link';
 import { Button } from './ui/button';
-import { Logo } from './ui/logo';
+import { Logo } from './ui/Logo';
 
 export const MobileNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

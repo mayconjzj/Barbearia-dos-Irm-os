@@ -1,10 +1,11 @@
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 import { links } from '@/config/nav-links';
+import { Sanctuarium } from '@/config/sanctuarium';
 
 import { MobileNavbar } from './mobile-navbar';
 import { ActiveLink } from './ui/active-link';
-import { Logo } from './ui/logo';
+import { Logo } from './ui/Logo';
 import { SocialButton } from './ui/social-button';
 
 export const Header = () => {
@@ -29,12 +30,15 @@ export const Header = () => {
 
       <div className="absolute right-2 md:right-20 flex">
         <SocialButton
-          href="https://instagram.com/sanctuariumbv"
-          title="Instagram"
+          href={Sanctuarium.contact.instagram.href}
+          title={Sanctuarium.contact.instagram.name}
         >
           <FaInstagram size={20} />
         </SocialButton>
-        <SocialButton href="https://wa.me/5511999999999" title="Whatsapp">
+        <SocialButton
+          href={Sanctuarium.contact.whatsapp.href}
+          title={Sanctuarium.contact.whatsapp.name}
+        >
           <FaWhatsapp size={20} />
         </SocialButton>
       </div>
