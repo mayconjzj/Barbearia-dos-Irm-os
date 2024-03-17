@@ -26,7 +26,7 @@ export const LogoIcon = ({ className, ...props }: LogoIcon) => {
         alt="Sanctuarium"
         width={36}
         height={36}
-        priority
+        loading="lazy"
         aria-label="Sanctuarium logo"
         className={cn(className)}
         {...props}
