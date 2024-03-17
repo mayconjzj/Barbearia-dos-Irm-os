@@ -16,6 +16,7 @@ export default function Home() {
             alt="Sanctuarium"
             fill
             priority
+            aria-label="Backdrop for the homepage"
             className="object-cover object-[80%_0%] md:object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background" />
@@ -32,8 +33,14 @@ export default function Home() {
             individualidade. Venha nos visitar e encontre seu santuário pessoal
             de estilo e beleza.
           </p>
-          <Button asChild aria-label="Contato" title="Contato">
-            <Link href="https://wa.me/5511999999999">Contato</Link>
+          <Button asChild>
+            <Link
+              href="https://wa.me/5511999999999"
+              target="_blank"
+              title="Contato"
+            >
+              Contato
+            </Link>
           </Button>
         </div>
       </section>
@@ -58,6 +65,7 @@ export default function Home() {
                   alt="Barbeiro"
                   fill
                   priority
+                  aria-label='Foto de perfil do colaborador "Robertinho"'
                   className="object-cover object-center inset-0 -z-10"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background" />
@@ -75,6 +83,7 @@ export default function Home() {
                   alt="Barbeiro"
                   fill
                   priority
+                  aria-label='Foto de perfil do colaborador "Evelyn"'
                   className="object-cover object-center inset-0 -z-10"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background" />

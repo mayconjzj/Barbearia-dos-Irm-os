@@ -10,11 +10,12 @@ export type SocialButtonProps =
 export const SocialButton = ({
   href,
   children,
+  title,
   ...props
 }: SocialButtonProps) => {
   return (
     <Button asChild variant="ghost" {...props}>
-      <Link href={href} target="_blank">
+      <Link href={href} target="_blank" title={title} aria-label={title}>
         {children}
       </Link>
     </Button>

@@ -16,7 +16,7 @@ export const Footer = () => {
         <article className="space-y-3 lg:pr-2 py-4 border-b-[0.5px] lg:border-b-0 lg:border-r-[0.5px] border-border">
           <div className="space-y-3">
             <Logo.Root>
-              <Logo.Name className="text-4xl font-black" name="Sanctuarium" />
+              <Logo.Name className="text-4xl font-black" />
             </Logo.Root>
             <p className="text-muted font-light">
               No Sanctuarium, combinamos barbearia e estúdio de tatuagens para
@@ -35,7 +35,11 @@ export const Footer = () => {
                 asChild
                 className="rounded-full w-12 h-12 p-1 flex items-center justify-center"
               >
-                <Link href="https://instagram.com/sanctuariumbv">
+                <Link
+                  href="https://instagram.com/sanctuariumbv"
+                  target="_blank"
+                  aria-label="Instagram"
+                >
                   <FaInstagram size={24} />
                 </Link>
               </Button>
@@ -48,7 +52,9 @@ export const Footer = () => {
           <ul className="space-y-2">
             {links.map((link) => (
               <li key={link.name}>
-                <ActiveLink href={link.href}>{link.name}</ActiveLink>
+                <ActiveLink href={link.href} title={link.name}>
+                  {link.name}
+                </ActiveLink>
               </li>
             ))}
           </ul>
@@ -77,8 +83,7 @@ export const Footer = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="mapa"
-              aria-label="mapa"
+              aria-label="Localização"
               className="rounded-lg"
             ></iframe>
           </div>
@@ -91,6 +96,7 @@ export const Footer = () => {
             className="text-foreground font-bold"
             href="https://instagram.com/mayconjzj"
             target="_blank"
+            title="Instagram de MAYCON DOUGLAS"
           >
             MAYCON DOUGLAS
           </Link>{' '}

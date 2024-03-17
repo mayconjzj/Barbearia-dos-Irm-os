@@ -17,7 +17,9 @@ export const Header = () => {
         <ul className="flex items-center gap-x-6">
           {links.map((link) => (
             <li key={link.name}>
-              <ActiveLink href={link.href}>{link.name}</ActiveLink>
+              <ActiveLink href={link.href} title={link.name}>
+                {link.name}
+              </ActiveLink>
             </li>
           ))}
         </ul>
@@ -28,16 +30,11 @@ export const Header = () => {
       <div className="absolute right-2 sm:right-20 flex">
         <SocialButton
           href="https://instagram.com/sanctuariumbv"
-          arial-label="Instagram"
           title="Instagram"
         >
           <FaInstagram size={20} />
         </SocialButton>
-        <SocialButton
-          href="https://wa.me/5511999999999"
-          arial-label="Whatsapp"
-          title="Whatsapp"
-        >
+        <SocialButton href="https://wa.me/5511999999999" title="Whatsapp">
           <FaWhatsapp size={20} />
         </SocialButton>
       </div>

@@ -27,6 +27,7 @@ export const LogoIcon = ({ className, ...props }: LogoIcon) => {
         width={36}
         height={36}
         priority
+        aria-label="Sanctuarium logo"
         className={cn(className)}
         {...props}
       />
@@ -40,7 +41,12 @@ export type LogoNameProps = React.AllHTMLAttributes<HTMLAnchorElement> & {
 
 const LogoName = ({ className, ...props }: LogoNameProps) => {
   return (
-    <Link href="/" className={cn('text-foreground', className)} {...props}>
+    <Link
+      href="/"
+      className={cn('text-foreground', className)}
+      title="Sanctuarium"
+      {...props}
+    >
       Sanctuarium
     </Link>
   );
