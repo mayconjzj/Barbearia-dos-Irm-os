@@ -73,7 +73,6 @@ export const Footer = () => {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               aria-label="Localização"
-              className="rounded-lg"
             ></iframe>
           </div>
         </article>

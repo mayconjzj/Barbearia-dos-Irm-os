@@ -24,7 +24,7 @@ export const SanctuariumSection = () => {
         <div className="absolute inset-0 bg-gradient-to-l from-transparent to-background" />
       </div>
 
-      <div className="max-w-[600px] mb-10 md:mb-0 space-y-3">
+      <div className="max-w-[600px] mb-28 md:mb-0 space-y-3">
         <h1 className="text-5xl font-black text-foreground">
           {Sanctuarium.name}
         </h1>
