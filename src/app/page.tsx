@@ -81,7 +81,7 @@ export default function Home() {
               <div className="relative min-w-[280px] h-[450px] rounded-lg overflow-hidden">
                 <Image
                   src="/images/tatuadora.jpg"
-                  alt="Barbeiro"
+                  alt="Tatuadora"
                   width={280}
                   height={450}
                   loading="lazy"
