@@ -9,7 +9,7 @@ export const SanctuariumSection = () => {
   return (
     <section
       id="home"
-      className="min-h-[calc(100vh-60px)] flex items-end md:items-center border-b-[0.5px] border-border"
+      className="min-h-[100vh] flex items-end md:items-center border-b-[0.5px] border-border"
     >
       <div className="absolute inset-0 -z-10 w-full h-screen">
         <Image
