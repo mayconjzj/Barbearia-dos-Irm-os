@@ -14,7 +14,6 @@ export default function Home() {
           <Image
             src="/images/barber-backdrop.jpg"
             alt="Sanctuarium"
-            fill
             priority
             aria-label="Backdrop for the homepage"
             className="object-cover object-[80%_0%] md:object-center"
@@ -63,7 +62,8 @@ export default function Home() {
                 <Image
                   src="/images/barbeiro.jpg"
                   alt="Barbeiro"
-                  fill
+                  width={280}
+                  height={450}
                   loading="lazy"
                   aria-label='Foto de perfil do colaborador "Robertinho"'
                   className="object-cover object-center inset-0 -z-10"
@@ -81,7 +81,8 @@ export default function Home() {
                 <Image
                   src="/images/tatuadora.jpg"
                   alt="Barbeiro"
-                  fill
+                  width={280}
+                  height={450}
                   loading="lazy"
                   aria-label='Foto de perfil do colaborador "Evelyn"'
                   className="object-cover object-center inset-0 -z-10"
