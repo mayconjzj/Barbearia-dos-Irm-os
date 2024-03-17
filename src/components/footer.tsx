@@ -17,7 +17,7 @@ export const Footer = () => {
           </div>
 
           <div className="space-y-3">
-            <h3 className="text-2xl font-bold">REDES SOCIAIS</h3>
+            <h2 className="text-2xl font-bold">REDES SOCIAIS</h2>
             <div className="space-x-2">
               <Button
                 asChild
