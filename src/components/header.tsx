@@ -1,5 +1,3 @@
-import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
-
 import { links } from '@/config/nav-links';
 import { Sanctuarium } from '@/config/sanctuarium';
 
@@ -33,13 +31,13 @@ export const Header = () => {
           href={Sanctuarium.contact.instagram.href}
           title={Sanctuarium.contact.instagram.name}
         >
-          <FaInstagram size={20} />
+          {Sanctuarium.contact.instagram.icon(20)}
         </SocialButton>
         <SocialButton
           href={Sanctuarium.contact.whatsapp.href}
           title={Sanctuarium.contact.whatsapp.name}
         >
-          <FaWhatsapp size={20} />
+          {Sanctuarium.contact.whatsapp.icon(20)}
         </SocialButton>
       </div>
     </header>

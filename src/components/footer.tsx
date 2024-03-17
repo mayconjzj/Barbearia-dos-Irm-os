@@ -28,7 +28,7 @@ export const Footer = () => {
                   target="_blank"
                   aria-label={Sanctuarium.contact.instagram.name}
                 >
-                  {Sanctuarium.contact.instagram.icon}
+                  {Sanctuarium.contact.instagram.icon(24)}
                 </Link>
               </Button>
             </div>
@@ -52,14 +52,14 @@ export const Footer = () => {
           <h2 className="text-2xl font-bold">CONTATO</h2>
           <div>
             <div className="flex items-center gap-x-4">
-              {Sanctuarium.contact.phone.icon}
+              {Sanctuarium.contact.phone.icon(18)}
               <p className="text-foreground font-light">
                 {Sanctuarium.contact.phone.href}
               </p>
             </div>
 
             <div className="flex items-center gap-x-4">
-              {Sanctuarium.address.icon}
+              {Sanctuarium.address.icon(24)}
               <p className="text-foreground font-light">
                 {Sanctuarium.address.address}
               </p>
