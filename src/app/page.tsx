@@ -14,6 +14,7 @@ export default function Home() {
           <Image
             src="/images/barber-backdrop.jpg"
             alt="Sanctuarium"
+            fill
             priority
             aria-label="Backdrop for the homepage"
             className="object-cover object-[80%_0%] md:object-center"
