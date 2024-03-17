@@ -12,12 +12,11 @@ export default function Home() {
       >
         <div className="absolute inset-0 -z-10 w-full h-screen">
           <Image
-            className="object-[80%_0%] md:object-center"
             src="/images/barber-backdrop.jpg"
             alt="Sanctuarium"
             fill
-            objectFit="cover"
             priority
+            className="object-cover object-[80%_0%] md:object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background" />
           <div className="absolute inset-0 bg-gradient-to-l from-transparent to-background" />
@@ -58,9 +57,8 @@ export default function Home() {
                   src="/images/barbeiro.jpg"
                   alt="Barbeiro"
                   fill
-                  objectFit="cover"
                   priority
-                  className="object-center inset-0 -z-10"
+                  className="object-cover object-center inset-0 -z-10"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background" />
                 <div className="absolute bottom-5 left-5">
@@ -76,9 +74,8 @@ export default function Home() {
                   src="/images/tatuadora.jpg"
                   alt="Barbeiro"
                   fill
-                  objectFit="cover"
                   priority
-                  className="object-center inset-0 -z-10"
+                  className="object-cover object-center inset-0 -z-10"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background" />
                 <div className="absolute bottom-5 left-5">
