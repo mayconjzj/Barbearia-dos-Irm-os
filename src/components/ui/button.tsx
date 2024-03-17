@@ -6,7 +6,7 @@ export const buttonVariants = tv({
   variants: {
     variant: {
       default:
-        'px-4 py-2 bg-button text-button-foreground dark:font-light duration-300 rounded-md',
+        'px-4 py-2 bg-button text-button-foreground dark:font-light duration-300 rounded-md hover:bg-button-hover',
       ghost: 'p-2 hover:bg-button-foreground rounded-md duration-300'
     },
     size: {

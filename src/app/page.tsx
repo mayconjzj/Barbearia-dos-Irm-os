@@ -6,55 +6,100 @@ import { Button } from '@/components/ui/button';
 export default function Home() {
   return (
     <article className="max-w-[1200px] m-auto">
-      <section className="min-h-[calc(100vh-60px)] flex items-end sm:items-center">
+      <section
+        id="home"
+        className="min-h-[calc(100vh-60px)] flex items-end sm:items-center"
+      >
         <div className="absolute inset-0 -z-10 w-full h-screen">
           <Image
-            className="object-cover object-[80%_0%] md:object-center"
+            className="object-[80%_0%] md:object-center"
             src="/images/barber-backdrop.jpg"
             alt="Sanctuarium"
             fill
+            objectFit="cover"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background" />
           <div className="absolute inset-0 bg-gradient-to-l from-transparent to-background" />
         </div>
+
         <div className="max-w-[600px] mb-10 sm:mb-0 space-y-3">
-          <h1 className="text-5xl font-black">Barbearia dos Irmãos</h1>
+          <h1 className="text-5xl font-black">Sanctuarium</h1>
           <p className="text-muted font-light">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
-            doloremque, officia ut consectetur omnis, corporis in ea sapiente
-            velit harum unde hic vitae. Ab quod architecto beatae veritatis
-            quidem unde!
+            Uma fusão única de barbearia e estúdio de tatuagens, onde estilo e
+            autoexpressão se encontram. Nossa equipe dedicada oferece cortes de
+            cabelo, barbas e tatuagens personalizadas em um ambiente acolhedor e
+            sofisticado. Cada cliente é tratado de forma única, celebrando sua
+            individualidade. Venha nos visitar e encontre seu santuário pessoal
+            de estilo e beleza.
           </p>
           <Button asChild aria-label="Contato" title="Contato">
             <Link href="https://wa.me/5511999999999">Contato</Link>
           </Button>
         </div>
       </section>
-      {/* <div className="space-y-10 max-w-[800px]">
-        <section>
+
+      <div className="space-y-10">
+        <section id="about" className="pt-16">
           <div className="space-y-3">
-            <h2 className="text-4xl font-black">Produtos</h2>
-            <p className="text-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-              distinctio magnam obcaecati error voluptates nam minus numquam
-              tempore odit vel est sunt eveniet ea, asperiores beatae cumque.
-              Repudiandae, exercitationem ipsam.
-            </p>
+            <div className="max-w-[600px] space-y-3">
+              <h2 className="text-3xl font-black">Quem Somos</h2>
+              <p className="text-muted font-light">
+                No Sanctuarium, nossos especialistas em cortes e tatuagens estão
+                prontos para transformar sua aparência e celebrar sua
+                autenticidade.
+              </p>
+            </div>
+
+            <h3 className="text-2xl font-bold">Nossos colaboradores</h3>
+            <div className="flex gap-x-3 overflow-auto">
+              <div className="relative min-w-[280px] h-[450px] rounded-lg overflow-hidden">
+                <Image
+                  src="/images/barbeiro.jpg"
+                  alt="Barbeiro"
+                  fill
+                  objectFit="cover"
+                  priority
+                  className="object-center inset-0 -z-10"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background" />
+                <div className="absolute bottom-5 left-5">
+                  <h3 className="text-2xl font-bold">Robertinho</h3>
+                  <span className="text-muted font-light">Barbeiro</span>
+                </div>
+              </div>
+
+              <div className="relative min-w-[280px] h-[450px] rounded-lg overflow-hidden">
+                <Image
+                  src="/images/tatuadora.jpg"
+                  alt="Barbeiro"
+                  fill
+                  objectFit="cover"
+                  priority
+                  className="object-center inset-0 -z-10"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background" />
+                <div className="absolute bottom-5 left-5">
+                  <h3 className="text-2xl font-bold">Evelyn</h3>
+                  <span className="text-muted font-light">Tatuadora</span>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
-        <section>
-          <div className="space-y-3">
-            <h2 className="text-4xl font-black">Serviços</h2>
-            <p className="text-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-              distinctio magnam obcaecati error voluptates nam minus numquam
-              tempore odit vel est sunt eveniet ea, asperiores beatae cumque.
-              Repudiandae, exercitationem ipsam.
-            </p>
-          </div>
+
+        <section id="services">
+          <h2 className="text-3xl font-black">Serviços</h2>
         </section>
-      </div> */}
+
+        <section id="schedules">
+          <h2 className="text-3xl font-black">Horários</h2>
+        </section>
+
+        <section id="gallery">
+          <h2 className="text-3xl font-black">Galeria</h2>
+        </section>
+      </div>
     </article>
   );
 }

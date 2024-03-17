@@ -37,7 +37,9 @@ export const MobileNavbar = () => {
         >
           <FiX size={20} />
         </Button>
-        <Logo href="/">Sanctuarium</Logo>
+        <Logo.Root>
+          <Logo.Name />
+        </Logo.Root>
         <ul className="flex flex-col gap-y-3">
           {links.map((link) => (
             <li key={link.name}>

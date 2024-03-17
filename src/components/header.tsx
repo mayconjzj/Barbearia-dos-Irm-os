@@ -9,10 +9,12 @@ import { SocialButton } from './ui/social-button';
 
 export const Header = () => {
   return (
-    <header className="flex relative items-center px-4 sm:px-10 py-4 h-[60px] backdrop-blur-lg font-medium border-b-[0.5px] border-border">
-      <nav className="hidden sm:flex gap-x-6">
-        <Logo href="/">LOGO</Logo>
-        <ul className="flex gap-x-6">
+    <header className="flex fixed top-0 z-50 w-screen items-center px-2 sm:px-20 py-4 h-[60px] backdrop-blur-lg font-medium border-b-[0.5px] border-border">
+      <nav className="hidden sm:flex sm:items-center gap-x-6">
+        <Logo.Root>
+          <Logo.Icon />
+        </Logo.Root>
+        <ul className="flex items-center gap-x-6">
           {links.map((link) => (
             <li key={link.name}>
               <ActiveLink href={link.href}>{link.name}</ActiveLink>
@@ -20,10 +22,12 @@ export const Header = () => {
           ))}
         </ul>
       </nav>
+
       <MobileNavbar />
-      <div className="absolute right-4 sm:right-10 flex">
+
+      <div className="absolute right-2 sm:right-20 flex">
         <SocialButton
-          href="https://instagram.com"
+          href="https://instagram.com/sanctuariumbv"
           arial-label="Instagram"
           title="Instagram"
         >

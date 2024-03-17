@@ -25,7 +25,8 @@ const config: Config = {
         muted: 'var(--muted)',
         button: {
           DEFAULT: 'var(--button)',
-          foreground: 'var(--button-foreground)'
+          foreground: 'var(--button-foreground)',
+          hover: 'var(--button-hover)'
         }
       },
       borderRadius: {

@@ -1,22 +1,22 @@
 export const links = [
   {
     name: 'Início',
-    href: '/'
+    href: '#home'
   },
   {
     name: 'Quem somos',
-    href: '/about'
+    href: '#about'
   },
   {
     name: 'Serviços',
-    href: '/services'
+    href: '#services'
   },
   {
     name: 'Horários',
-    href: '/schedules'
+    href: '#schedules'
   },
   {
     name: 'Galeria',
-    href: '/gallery'
+    href: '#gallery'
   }
 ];

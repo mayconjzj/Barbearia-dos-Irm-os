@@ -24,6 +24,7 @@
 
     --button: #f4f4f5;
     --button-foreground: #27272a;
+    --button-hover: #d4d4d8;
 
     --border: #18181b;
   }
@@ -37,4 +38,8 @@
   body {
     @apply bg-background text-foreground font-inter;
   }
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
