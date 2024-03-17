@@ -24,7 +24,7 @@ export default function Home() {
         </div>
 
         <div className="max-w-[600px] mb-10 sm:mb-0 space-y-3">
-          <h1 className="text-5xl font-black">Sanctuarium</h1>
+          <h1 className="text-5xl font-black text-foreground">Sanctuarium</h1>
           <p className="text-muted font-light">
             Uma fusão única de barbearia e estúdio de tatuagens, onde estilo e
             autoexpressão se encontram. Nossa equipe dedicada oferece cortes de
@@ -52,7 +52,7 @@ export default function Home() {
             </div>
 
             <h3 className="text-2xl font-bold">Nossos colaboradores</h3>
-            <div className="flex gap-x-3 overflow-auto">
+            <div className="dark flex gap-x-3 overflow-auto">
               <div className="relative min-w-[280px] h-[450px] rounded-lg overflow-hidden">
                 <Image
                   src="/images/barbeiro.jpg"
@@ -64,7 +64,9 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background" />
                 <div className="absolute bottom-5 left-5">
-                  <h3 className="text-2xl font-bold">Robertinho</h3>
+                  <h3 className="text-2xl font-bold text-foreground">
+                    Robertinho
+                  </h3>
                   <span className="text-muted font-light">Barbeiro</span>
                 </div>
               </div>
@@ -80,7 +82,7 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background" />
                 <div className="absolute bottom-5 left-5">
-                  <h3 className="text-2xl font-bold">Evelyn</h3>
+                  <h3 className="text-2xl font-bold text-foreground">Evelyn</h3>
                   <span className="text-muted font-light">Tatuadora</span>
                 </div>
               </div>
