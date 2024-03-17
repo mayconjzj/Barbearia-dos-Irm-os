@@ -2,31 +2,31 @@ export const Collaborators = [
   {
     name: 'Diego Mazzola',
     office: 'Barbeiro',
-    image: '/images/barbeiro.webp'
+    image: '/images/barbeiro.jpg'
   },
   {
     name: 'Clara',
     office: 'Tatuadora',
-    image: '/images/tatuadora.webp'
+    image: '/images/tatuadora.jpg'
   },
   {
     name: 'Diego Mazzola',
     office: 'Barbeiro',
-    image: '/images/barbeiro.webp'
+    image: '/images/barbeiro.jpg'
   },
   {
     name: 'Clara',
     office: 'Tatuadora',
-    image: '/images/tatuadora.webp'
+    image: '/images/tatuadora.jpg'
   },
   {
     name: 'Diego Mazzola',
     office: 'Barbeiro',
-    image: '/images/barbeiro.webp'
+    image: '/images/barbeiro.jpg'
   },
   {
     name: 'Clara',
     office: 'Tatuadora',
-    image: '/images/tatuadora.webp'
+    image: '/images/tatuadora.jpg'
   }
 ];

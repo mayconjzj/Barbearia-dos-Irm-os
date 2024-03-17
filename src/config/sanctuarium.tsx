@@ -6,8 +6,8 @@ export const Sanctuarium = {
   name: 'Sanctuarium',
   description:
     'Uma fusão única de barbearia e estúdio de tatuagens, onde estilo e autoexpressão se encontram. Nossa equipe dedicada oferece cortes de cabelo, barbas e tatuagens personalizadas em um ambiente acolhedor e sofisticado. Cada cliente é tratado de forma única, celebrando sua individualidade. Venha nos visitar e encontre seu santuário pessoal de estilo e beleza.',
-  backdrop: '/images/barber-backdrop.webp',
-  logo: '/images/sanctuarium-logo.webp',
+  backdrop: '/images/barber-backdrop.jpg',
+  logo: '/images/sanctuarium-logo.jpg',
   favicon: '/images/sanctuarium-favicon.ico',
   contact: {
     instagram: {
