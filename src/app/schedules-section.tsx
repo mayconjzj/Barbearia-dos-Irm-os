@@ -7,7 +7,7 @@ export const SchedulesSection = () => {
   return (
     <section
       id="schedules"
-      className="space-y-3 min-h-[100vh] flex flex-col justify-center border-b-[0.5px] border-border"
+      className="space-y-3 py-4 min-h-[100vh] flex flex-col justify-center border-b-[0.5px] border-border"
     >
       <h2 className="text-3xl font-black">{Sanctuarium.schedules.name}</h2>
 
