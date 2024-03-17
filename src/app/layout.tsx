@@ -17,6 +17,7 @@ export default function RootLayout({
       <head>
         <title>{Sanctuarium.name}</title>
         <meta name="description" content={Sanctuarium.description} />
+        <link rel="icon" href={Sanctuarium.favicon} />
       </head>
       <body>
         <Providers attribute="class" defaultTheme="dark">

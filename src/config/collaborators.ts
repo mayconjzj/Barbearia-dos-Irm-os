@@ -2,11 +2,11 @@ export const Collaborators = [
   {
     name: 'Diego Mazzola',
     office: 'Barbeiro',
-    image: '/images/barbeiro.jpg'
+    image: '/images/barbeiro.webp'
   },
   {
     name: 'Clara',
     office: 'Tatuadora',
-    image: '/images/tatuadora.jpg'
+    image: '/images/tatuadora.webp'
   }
 ];
