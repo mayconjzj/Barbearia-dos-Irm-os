@@ -65,7 +65,7 @@ export const Footer = () => {
               </p>
             </div>
 
-            {/* <iframe
+            <iframe
               src={Sanctuarium.address.href}
               width="100%"
               height="200px"
@@ -74,7 +74,7 @@ export const Footer = () => {
               referrerPolicy="no-referrer-when-downgrade"
               aria-label="Localização"
               className="rounded-lg"
-            ></iframe> */}
+            ></iframe>
           </div>
         </article>
       </section>
