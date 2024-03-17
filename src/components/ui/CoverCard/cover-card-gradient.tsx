@@ -1,6 +1,6 @@
 import { cn } from '@/lib/tailwind-merge';
 
-export const CollaboratorProfileGradient = ({
+export const CoverCardGradient = ({
   className,
   ...props
 }: {

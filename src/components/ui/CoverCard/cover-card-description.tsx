@@ -1,13 +1,13 @@
 import { cn } from '@/lib/tailwind-merge';
 
-export type CollaboratorProfileOfficeProps =
+export type CoverCardDescriptionProps =
   React.AllHTMLAttributes<HTMLSpanElement>;
 
-export const CollaboratorProfileOffice = ({
+export const CoverCardDescription = ({
   children,
   className,
   ...props
-}: CollaboratorProfileOfficeProps) => {
+}: CoverCardDescriptionProps) => {
   return (
     <span className={cn('text-muted font-light', className)} {...props}>
       {children}

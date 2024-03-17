@@ -1,7 +1,7 @@
 import { Collaborators } from '@/config/collaborators';
 import { Sanctuarium } from '@/config/sanctuarium';
 
-import { CollaboratorProfile } from '@/components/ui/CollaboratorProfile';
+import { CoverCard } from '@/components/ui/CoverCard';
 
 export const AboutSection = () => {
   return (
@@ -15,23 +15,24 @@ export const AboutSection = () => {
       </div>
 
       <h3 className="text-2xl font-bold">Nossos colaboradores</h3>
-      <div className="dark flex gap-x-3 overflow-auto">
+      <div className="flex gap-x-3 overflow-auto">
         {Collaborators.map((collaborator) => (
-          <CollaboratorProfile.Root key={collaborator.name}>
-            <CollaboratorProfile.Image
+          <CoverCard.Root
+            key={collaborator.name}
+            className=" min-w-[280px] h-[450px]"
+          >
+            <CoverCard.Image
               name={collaborator.name}
               src={collaborator.image}
             />
-            <CollaboratorProfile.Gradient />
-            <CollaboratorProfile.Content>
-              <CollaboratorProfile.Name>
-                {collaborator.name}
-              </CollaboratorProfile.Name>
-              <CollaboratorProfile.Office>
+            <CoverCard.Gradient />
+            <CoverCard.Content>
+              <CoverCard.Title>{collaborator.name}</CoverCard.Title>
+              <CoverCard.Description>
                 {collaborator.office}
-              </CollaboratorProfile.Office>
-            </CollaboratorProfile.Content>
-          </CollaboratorProfile.Root>
+              </CoverCard.Description>
+            </CoverCard.Content>
+          </CoverCard.Root>
         ))}
       </div>
     </section>

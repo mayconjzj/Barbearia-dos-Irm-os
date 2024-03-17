@@ -1,13 +1,12 @@
 import { cn } from '@/lib/tailwind-merge';
 
-export type CollaboratorProfileContentProps =
-  React.AllHTMLAttributes<HTMLDivElement>;
+export type CoverCardContentProps = React.AllHTMLAttributes<HTMLDivElement>;
 
-export const CollaboratorProfileContent = ({
+export const CoverCardContent = ({
   children,
   className,
   ...props
-}: CollaboratorProfileContentProps) => {
+}: CoverCardContentProps) => {
   return (
     <div className={cn('absolute bottom-5 left-5', className)} {...props}>
       {children}
