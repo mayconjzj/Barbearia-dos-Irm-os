@@ -1,4 +1,5 @@
 import { AboutSection } from './about-section';
+import { GallerySection } from './gallery-section';
 import { SanctuariumSection } from './sanctuarium-section';
 import { SchedulesSection } from './schedules-section';
 import { ServicesSection } from './services-section';
@@ -11,6 +12,7 @@ export default function Home() {
         <AboutSection />
         <ServicesSection />
         <SchedulesSection />
+        <GallerySection />
       </div>
     </article>
   );

@@ -1,3 +1,4 @@
+import { Schedules } from '@/config/sanc-schedules';
 import { Sanctuarium } from '@/config/sanctuarium';
 
 import { Card } from '@/components/ui/Card';
@@ -9,11 +10,11 @@ export const SchedulesSection = () => {
       id="schedules"
       className="space-y-3 py-4 min-h-[100vh] flex flex-col justify-center border-b-[0.5px] border-border"
     >
-      <h2 className="text-3xl font-black">{Sanctuarium.schedules.name}</h2>
+      <h2 className="text-3xl font-black">{Schedules.name}</h2>
 
       <div className="space-y-12">
         <div className="flex gap-3 justify-evenly flex-wrap">
-          {Sanctuarium.schedules.schedules.map((schedule) => (
+          {Schedules.schedules.map((schedule) => (
             <Card.Root
               key={schedule.day}
               className="w-36 h-52 flex flex-col justify-center gap-y-6
