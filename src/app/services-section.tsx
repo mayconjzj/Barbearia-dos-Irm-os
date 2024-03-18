@@ -3,7 +3,7 @@ import { CoverCard } from '@/components/ui/CoverCard';
 export const ServicesSection = () => {
   return (
     <section
-      id="about"
+      id="services"
       className="space-y-3 py-4 min-h-[100vh] flex flex-col justify-center border-b-[0.5px] border-border"
     >
       <h2 className="text-3xl font-black">Serviços</h2>
