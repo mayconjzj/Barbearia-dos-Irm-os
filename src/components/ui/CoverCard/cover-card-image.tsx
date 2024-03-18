@@ -12,8 +12,7 @@ export const CoverCardImage = ({ name, src }: CoverCardImageProps) => {
     <Image
       src={src}
       alt={name}
-      width={350}
-      height={350}
+      fill
       priority
       aria-label={`Foto de perfil do colaborador ${name}`}
       className={cn('object-cover object-center inset-0 -z-10')}
