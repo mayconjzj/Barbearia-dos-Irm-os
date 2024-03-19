@@ -1,4 +1,7 @@
+import type { Metadata } from 'next';
+
 import { Sanctuarium } from '@/config/sanctuarium';
+import { Analytics } from '@vercel/analytics/react';
 
 import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
@@ -7,6 +10,19 @@ import './globals.css';
 
 import { Providers } from './providers';
 
+export const metadata: Metadata = {
+  title: {
+    default: Sanctuarium.name,
+    template: `%s | ${Sanctuarium.name}`
+  },
+  description: Sanctuarium.description,
+  icons: {
+    icon: {
+      url: `${Sanctuarium.favicon}`
+    }
+  }
+};
+
 export default function RootLayout({
   children
 }: {
@@ -14,21 +30,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <head>
-        <title>{Sanctuarium.name}</title>
-        <meta name="description" content={Sanctuarium.description} />
-        <link rel="icon" href={Sanctuarium.favicon} />
-        <meta
-          name="google-site-verification"
-          content="TxSfWovss5wRRrEt5OcWFHccbCtavJrUE9BnnYbOPzw"
-        />
-      </head>
       <body>
         <Providers attribute="class" defaultTheme="dark">
           <Header />
           <main className="px-2 md:px-20 mt-[60px]">{children}</main>
           <Footer />
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
