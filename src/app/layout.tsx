@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 
 import { Sanctuarium } from '@/config/sanctuarium';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
@@ -36,6 +37,7 @@ export default function RootLayout({
           <main className="px-2 md:px-20 mt-[60px]">{children}</main>
           <Footer />
         </Providers>
+        <SpeedInsights />
         <Analytics />
       </body>
     </html>
