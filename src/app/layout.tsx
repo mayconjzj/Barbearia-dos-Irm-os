@@ -25,10 +25,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: Sanctuarium.name,
     description: Sanctuarium.description,
-    url: `${Sanctuarium.favicon}`,
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}`,
     images: [
       {
-        url: `${Sanctuarium.favicon}`,
+        url: `${Sanctuarium.backdrop}`,
         width: 1200,
         height: 630
       }
@@ -44,7 +44,14 @@ export const metadata: Metadata = {
   verification: {
     google:
       'google-site-verification=Ua52W6ogG218FGe7KujVJJxz8DXGUdG-cEjOXCWMfFU'
-  }
+  },
+  authors: [
+    {
+      name: 'Maycon Douglas',
+      url: 'https://github.com/mayconjzj'
+    }
+  ],
+  category: 'Barbearia'
 };
 
 export default function RootLayout({
