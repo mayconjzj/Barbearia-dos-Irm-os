@@ -41,7 +41,9 @@ export const metadata: Metadata = {
     description: Sanctuarium.description,
     images: [`${Sanctuarium.favicon}`]
   },
-  metadataBase: new URL(Sanctuarium.favicon),
+  metadataBase: new URL(
+    `${process.env.NEXT_PUBLIC_BASE_URL}${Sanctuarium.favicon}`
+  ),
   robots: {
     index: true,
     follow: true,
