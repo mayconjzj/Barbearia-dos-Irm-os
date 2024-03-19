@@ -18,6 +18,10 @@ export default function RootLayout({
         <title>{Sanctuarium.name}</title>
         <meta name="description" content={Sanctuarium.description} />
         <link rel="icon" href={Sanctuarium.favicon} />
+        <meta
+          name="google-site-verification"
+          content="TxSfWovss5wRRrEt5OcWFHccbCtavJrUE9BnnYbOPzw"
+        />
       </head>
       <body>
         <Providers attribute="class" defaultTheme="dark">
