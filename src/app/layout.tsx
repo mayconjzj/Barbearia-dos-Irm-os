@@ -22,6 +22,20 @@ export const metadata: Metadata = {
       url: `${Sanctuarium.favicon}`
     }
   },
+  keywords: [
+    'barbearia',
+    'estilismo',
+    'estilo',
+    'cabelo',
+    'barba',
+    'cortes',
+    'tatuagem',
+    'beleza',
+    'santuario',
+    'estudio',
+    'santatinta',
+    'tatuagens'
+  ],
   openGraph: {
     title: Sanctuarium.name,
     description: Sanctuarium.description,
