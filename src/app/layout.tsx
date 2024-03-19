@@ -39,18 +39,11 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: Sanctuarium.name,
     description: Sanctuarium.description,
-    images: [`${Sanctuarium.favicon}`]
+    images: [`${Sanctuarium.backdrop}`]
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1
-    }
+  verification: {
+    google:
+      'google-site-verification=Ua52W6ogG218FGe7KujVJJxz8DXGUdG-cEjOXCWMfFU'
   }
 };
 
