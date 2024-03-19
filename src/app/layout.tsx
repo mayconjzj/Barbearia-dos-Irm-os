@@ -21,6 +21,37 @@ export const metadata: Metadata = {
     icon: {
       url: `${Sanctuarium.favicon}`
     }
+  },
+  openGraph: {
+    title: Sanctuarium.name,
+    description: Sanctuarium.description,
+    url: `${Sanctuarium.favicon}`,
+    images: [
+      {
+        url: `${Sanctuarium.favicon}`,
+        width: 1200,
+        height: 630
+      }
+    ],
+    siteName: Sanctuarium.name
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: Sanctuarium.name,
+    description: Sanctuarium.description,
+    images: [`${Sanctuarium.favicon}`]
+  },
+  metadataBase: new URL(Sanctuarium.favicon),
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
+    }
   }
 };
 
