@@ -14,7 +14,7 @@ export const ServicesSection = () => {
         {Services.services.map((service) => (
           <CoverCard.Root
             key={service.name}
-            className="w-[170px] h-[170px] sm:w-[230px] sm:h-[230px] md:w-[300px] md:h-[300px]"
+            className="w-[95vw] max-w-[350px] h-[90vw] max-h-[350px]"
           >
             <CoverCard.Image name="Cortes de Cabelo" src={service.image} />
             <CoverCard.Gradient />

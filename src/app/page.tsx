@@ -1,8 +1,8 @@
-import { AboutSection } from './about-section';
-import { GallerySection } from './gallery-section';
-import { SanctuariumSection } from './sanctuarium-section';
-import { SchedulesSection } from './schedules-section';
-import { ServicesSection } from './services-section';
+import { AboutSection } from '../components/about';
+import { GallerySection } from '../components/gallery';
+import { SanctuariumSection } from '../components/sanctuarium';
+import { SchedulesSection } from '../components/schedules';
+import { ServicesSection } from '../components/services';
 
 export default function Home() {
   return (

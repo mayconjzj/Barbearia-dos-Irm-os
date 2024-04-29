@@ -14,7 +14,7 @@ export const GallerySection = () => {
       <div className="flex flex-wrap gap-2 justify-evenly">
         {Gallery.images.map((image) => (
           <Card.Root key={image.name}>
-            <CoverCard.Root className="w-[95vw] h-[90vw] max-w-[350px] max-h-[350px] sm:max-w-[250px] sm:max-h-[250px] md:max-w-[300px] md:max-h-[300px]">
+            <CoverCard.Root className="w-[95vw] h-[90vw] max-w-[350px] max-h-[350px]">
               <CoverCard.Image name={image.name} src={image.image} />
             </CoverCard.Root>
           </Card.Root>

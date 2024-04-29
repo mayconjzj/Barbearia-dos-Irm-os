@@ -18,7 +18,7 @@ export const AboutSection = () => {
         {About.cllaborators.map((collaborator) => (
           <CoverCard.Root
             key={collaborator.name}
-            className=" min-w-[280px] h-[450px]"
+            className="min-w-[280px] h-[450px]"
           >
             <CoverCard.Image
               name={collaborator.name}
